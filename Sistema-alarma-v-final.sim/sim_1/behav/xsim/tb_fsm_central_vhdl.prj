@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_esse_krl.srcs/sources_1/imports/Temp/fsm_central.vhd" \
+"../../../../../sistema_de_alarme.srcs/sources_1/imports/Temp/tb_fsm_central.vhd" \
+
+# Do not sort compile order
+nosort
