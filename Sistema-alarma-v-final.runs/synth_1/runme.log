@@ -1,0 +1,731 @@
+
+*** Running vivado
+    with args -log top_alarme.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_alarme.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top_alarme.tcl -notrace
+Command: synth_design -top top_alarme -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 412 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 356.258 ; gain = 99.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_alarme' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/top_alarme.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/clk_div.vhd:21]
+	Parameter DIV_FACTOR bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (1#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/clk_div.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'clk_div__parameterized0' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/clk_div.vhd:21]
+	Parameter DIV_FACTOR bound to: 100000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_div__parameterized0' (1#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/clk_div.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'clk_div__parameterized1' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/clk_div.vhd:21]
+	Parameter DIV_FACTOR bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_div__parameterized1' (1#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/clk_div.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/debounce.vhd:24]
+	Parameter STABLE_COUNT bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debounce' (2#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/debounce.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'sensor_hcsr04' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/sensor_hcsr04.vhd:28]
+	Parameter CLK_HZ bound to: 100000000 - type: integer 
+	Parameter LIMIAR_CM bound to: 25 - type: integer 
+	Parameter PERIODO_MS bound to: 60 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sensor_hcsr04' (3#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/sensor_hcsr04.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'gerenciador_zonas' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/gerenciador_zonas.vhd:44]
+	Parameter CONFIRMA_TICKS bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gerenciador_zonas' (4#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/gerenciador_zonas.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'keypad_4x4' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/keypad_4x4.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element achou_reg was removed.  [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/keypad_4x4.vhd:69]
+WARNING: [Synth 8-6014] Unused sequential element lin_idx_reg was removed.  [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/keypad_4x4.vhd:69]
+WARNING: [Synth 8-6014] Unused sequential element prox_col_reg was removed.  [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/keypad_4x4.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'keypad_4x4' (5#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/keypad_4x4.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'controle_acesso' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/controle_acesso.vhd:39]
+	Parameter PIN0 bound to: 1 - type: integer 
+	Parameter PIN1 bound to: 2 - type: integer 
+	Parameter PIN2 bound to: 3 - type: integer 
+	Parameter PIN3 bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element k_reg was removed.  [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/controle_acesso.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'controle_acesso' (6#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/controle_acesso.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'temporizador' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/temporizador.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'temporizador' (7#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/temporizador.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'fsm_central' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/fsm_central.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'fsm_central' (8#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/fsm_central.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'controle_contramedidas' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/controle_contramedidas.vhd:29]
+	Parameter CLK_HZ bound to: 100000000 - type: integer 
+	Parameter FREQ_ESTROBO bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'controle_contramedidas' (9#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/controle_contramedidas.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'interface_esp32' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/interface_esp32.vhd:144]
+	Parameter CLK_HZ bound to: 100000000 - type: integer 
+	Parameter WD_MS bound to: 8000 - type: integer 
+	Parameter DIV bound to: 10416 - type: integer 
+INFO: [Synth 8-3491] module 'uart_tx' declared at 'C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/interface_esp32.vhd:17' bound to instance 'U_TX' of component 'uart_tx' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/interface_esp32.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/interface_esp32.vhd:29]
+	Parameter DIV bound to: 10416 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (10#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/interface_esp32.vhd:29]
+	Parameter DIV bound to: 10416 - type: integer 
+INFO: [Synth 8-3491] module 'uart_rx' declared at 'C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/interface_esp32.vhd:71' bound to instance 'U_RX' of component 'uart_rx' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/interface_esp32.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/interface_esp32.vhd:82]
+	Parameter DIV bound to: 10416 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (11#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/interface_esp32.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'interface_esp32' (12#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/interface_esp32.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'display_7seg' [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/display_7seg.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'display_7seg' (13#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/display_7seg.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'top_alarme' (14#1) [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/top_alarme.vhd:59]
+WARNING: [Synth 8-3917] design top_alarme has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design top_alarme has port led[14] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 412.152 ; gain = 155.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.152 ; gain = 155.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.152 ; gain = 155.254
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/constrs_1/imports/Temp/basys3.xdc]
+Finished Parsing XDC File [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/constrs_1/imports/Temp/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/constrs_1/imports/Temp/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_alarme_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_alarme_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 752.852 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 752.852 ; gain = 495.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 752.852 ; gain = 495.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 752.852 ; gain = 495.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'estado_reg' in module 'sensor_hcsr04'
+INFO: [Synth 8-5546] ROM "trig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "estado" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "estado" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "trig" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cont_per" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "estado" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "latch" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "latch" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "latch" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "latch" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "latch" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "key_down" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "zerado" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'estado_reg' in module 'fsm_central'
+INFO: [Synth 8-5544] ROM "prox" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "prox" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "prox" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sq" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'uart_tx'
+INFO: [Synth 8-5546] ROM "busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "st" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_i" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "st" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'uart_rx'
+INFO: [Synth 8-5546] ROM "valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "st" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "st" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bit_i" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "st" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'fst_reg' in module 'interface_esp32'
+INFO: [Synth 8-5546] ROM "esp_reset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "app_toggle" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "app_desarma" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "app_bypass_v" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "letra" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 dispara |                               00 |                               00
+             espera_echo |                               01 |                               01
+                    mede |                               10 |                               10
+               intervalo |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'sequential' in module 'sensor_hcsr04'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             e_desarmado |                            00001 |                              000
+                 e_saida |                            00010 |                              001
+                e_armado |                            00100 |                              010
+               e_entrada |                            01000 |                              011
+            e_disparando |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'one-hot' in module 'fsm_central'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                   dados |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                   dados |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  parado |                              000 |                              000
+                      b0 |                              001 |                              001
+                      b1 |                              010 |                              010
+                      b2 |                              011 |                              011
+                      b3 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fst_reg' using encoding 'sequential' in module 'interface_esp32'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:38 . Memory (MB): peak = 752.852 ; gain = 495.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 9     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               26 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               22 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 11    
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input     26 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 3     
+	   4 Input     14 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 10    
+	   4 Input      5 Bit        Muxes := 4     
+	   5 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 12    
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 20    
+	   5 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 74    
+	   4 Input      1 Bit        Muxes := 19    
+	   5 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_alarme 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_div__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_div__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module sensor_hcsr04 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     26 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+Module gerenciador_zonas 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 5     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 20    
+Module keypad_4x4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+Module controle_acesso 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 12    
+	   2 Input      3 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+Module temporizador 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module fsm_central 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+Module controle_contramedidas 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 7     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	   4 Input     14 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 5     
+Module interface_esp32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---XORs : 
+	   3 Input      8 Bit         XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 3     
+Module display_7seg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "D1/cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "D1/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "D2/cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "D2/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "D3/cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "D3/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element CA/auth_reg was removed.  [C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.srcs/sources_1/imports/Temp/controle_acesso.vhd:56]
+INFO: [Synth 8-5546] ROM "DB/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HC5/estado" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HC5/estado" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HC5/trig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "O190" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "TM/zerado" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IE/U_TX/busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IE/U_RX/valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IE/U_RX/st" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IE/esp_reset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "D1/cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "D1/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "D2/cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "D2/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "D3/cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "D3/tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design top_alarme has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design top_alarme has port led[14] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'IE/estado_d_reg[2]' (FDC) to 'IE/trig_d_reg'
+INFO: [Synth 8-3886] merging instance 'IE/tx_data_reg[7]' (FDE) to 'IE/tx_data_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IE/tx_data_reg[6] )
+INFO: [Synth 8-3886] merging instance 'IE/U_TX/sh_reg[7]' (FDE) to 'IE/U_TX/sh_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IE/U_TX/sh_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (IE/tx_data_reg[6]) is unused and will be removed from module top_alarme.
+WARNING: [Synth 8-3332] Sequential element (IE/U_TX/sh_reg[6]) is unused and will be removed from module top_alarme.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 752.852 ; gain = 495.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:52 . Memory (MB): peak = 752.852 ; gain = 495.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:54 . Memory (MB): peak = 780.832 ; gain = 523.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (DB/cont_reg[7]) is unused and will be removed from module top_alarme.
+WARNING: [Synth 8-3332] Sequential element (DB/cont_reg[6]) is unused and will be removed from module top_alarme.
+WARNING: [Synth 8-3332] Sequential element (DB/cont_reg[5]) is unused and will be removed from module top_alarme.
+WARNING: [Synth 8-3332] Sequential element (DB/cont_reg[4]) is unused and will be removed from module top_alarme.
+WARNING: [Synth 8-3332] Sequential element (DB/cont_reg[3]) is unused and will be removed from module top_alarme.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:54 . Memory (MB): peak = 781.895 ; gain = 524.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop IE/esp_reset_reg is being inverted and renamed to IE/esp_reset_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 781.895 ; gain = 524.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 781.895 ; gain = 524.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 781.895 ; gain = 524.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 781.895 ; gain = 524.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 781.895 ; gain = 524.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 781.895 ; gain = 524.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    54|
+|3     |LUT1   |    11|
+|4     |LUT2   |   113|
+|5     |LUT3   |    36|
+|6     |LUT4   |    84|
+|7     |LUT5   |   167|
+|8     |LUT6   |   134|
+|9     |FDCE   |   333|
+|10    |FDPE   |    11|
+|11    |FDRE   |    36|
+|12    |IBUF   |    20|
+|13    |OBUF   |    37|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+------------------------+------+
+|      |Instance |Module                  |Cells |
++------+---------+------------------------+------+
+|1     |top      |                        |  1037|
+|2     |  CA     |controle_acesso         |    52|
+|3     |  CM     |controle_contramedidas  |    58|
+|4     |  D1     |clk_div                 |    82|
+|5     |  D2     |clk_div__parameterized0 |    83|
+|6     |  D3     |clk_div__parameterized1 |    82|
+|7     |  DB     |debounce                |    11|
+|8     |  DSP    |display_7seg            |     9|
+|9     |  FSM    |fsm_central             |    40|
+|10    |  GZ     |gerenciador_zonas       |    50|
+|11    |  HC5    |sensor_hcsr04           |   175|
+|12    |  IE     |interface_esp32         |   229|
+|13    |    U_RX |uart_rx                 |    98|
+|14    |    U_TX |uart_tx                 |    66|
+|15    |  KP     |keypad_4x4              |    56|
+|16    |  TM     |temporizador            |    39|
++------+---------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 781.895 ; gain = 524.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 781.895 ; gain = 184.297
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 781.895 ; gain = 524.996
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+122 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:58 . Memory (MB): peak = 781.895 ; gain = 538.211
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.runs/synth_1/top_alarme.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_alarme_utilization_synth.rpt -pb top_alarme_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 781.895 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 18 20:49:29 2026...

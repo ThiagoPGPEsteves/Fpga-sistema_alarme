@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1781826505">
+  <File Type="PA-TCL" Name="top_alarme.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_alarme_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_alarme_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top_alarme.vds"/>
+  <File Type="RDS-UTIL" Name="top_alarme_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_alarme_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top_alarme.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_alarme_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_alarme_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Temp/clk_div.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../clk_div.vhd"/>
+        <Attr Name="ImportTime" Val="1780366892"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Temp/controle_acesso.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../controle_acesso.vhd"/>
+        <Attr Name="ImportTime" Val="1780366892"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Temp/controle_contramedidas.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../controle_contramedidas.vhd"/>
+        <Attr Name="ImportTime" Val="1780366892"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Temp/debounce.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../debounce.vhd"/>
+        <Attr Name="ImportTime" Val="1780366892"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Temp/display_7seg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../display_7seg.vhd"/>
+        <Attr Name="ImportTime" Val="1780442759"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Temp/fsm_central.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../fsm_central.vhd"/>
+        <Attr Name="ImportTime" Val="1780365014"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Temp/gerenciador_zonas.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../gerenciador_zonas.vhd"/>
+        <Attr Name="ImportTime" Val="1780365014"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Temp/interface_esp32.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../interface_esp32.vhd"/>
+        <Attr Name="ImportTime" Val="1780365014"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Temp/keypad_4x4.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../keypad_4x4.vhd"/>
+        <Attr Name="ImportTime" Val="1780366892"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Temp/sensor_hcsr04.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../sensor_hcsr04.vhd"/>
+        <Attr Name="ImportTime" Val="1780366892"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Temp/temporizador.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../temporizador.vhd"/>
+        <Attr Name="ImportTime" Val="1780366892"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Temp/top_alarme.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../top_alarme.vhd"/>
+        <Attr Name="ImportTime" Val="1780365014"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_alarme"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Temp/basys3.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../basys3.xdc"/>
+        <Attr Name="ImportTime" Val="1780365014"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

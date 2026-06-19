@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jun 18 18:50:11 2026
+# Process ID: 17136
+# Current directory: C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.runs/impl_1
+# Command line: vivado.exe -log top_alarme.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_alarme.tcl -notrace
+# Log file: C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.runs/impl_1/top_alarme.vdi
+# Journal file: C:/Users/eletrica/Downloads/Sistema_alarme_v2/Sistema_alarme_v2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_alarme.tcl -notrace

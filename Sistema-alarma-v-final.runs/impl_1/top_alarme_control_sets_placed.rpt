@@ -1,0 +1,95 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Jun 18 20:58:21 2026
+| Host         : 231228-P06S01 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_alarme_control_sets_placed.rpt
+| Design       : top_alarme
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    26 |
+| Unused register locations in slices containing registers |    96 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            9 |
+|      8 |            1 |
+|     10 |            1 |
+|     12 |            3 |
+|     14 |            1 |
+|    16+ |           11 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              16 |            3 |
+| No           | No                    | Yes                    |             390 |           77 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              56 |           15 |
+| Yes          | No                    | Yes                    |             298 |           50 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |           Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+----------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | DB/state0_out                    | btn_reset_IBUF   |                1 |              2 |
+|  clk_IBUF_BUFG | IE/U_RX/sh[2]_i_1_n_0            |                  |                1 |              2 |
+|  clk_IBUF_BUFG | IE/U_RX/sh[1]_i_1_n_0            |                  |                1 |              2 |
+|  clk_IBUF_BUFG | IE/U_RX/sh[3]_i_1_n_0            |                  |                1 |              2 |
+|  clk_IBUF_BUFG | IE/U_RX/sh[4]_i_1_n_0            |                  |                1 |              2 |
+|  clk_IBUF_BUFG | IE/U_RX/sh[0]_i_1_n_0            |                  |                1 |              2 |
+|  clk_IBUF_BUFG | IE/U_RX/sh[5]_i_1__0_n_0         |                  |                1 |              2 |
+|  clk_IBUF_BUFG | IE/U_RX/sh[6]_i_1_n_0            |                  |                1 |              2 |
+|  clk_IBUF_BUFG | IE/U_RX/sh[7]_i_1_n_0            |                  |                1 |              2 |
+|  clk_IBUF_BUFG | D2/E[0]                          | btn_reset_IBUF   |                1 |              8 |
+|  clk_IBUF_BUFG | FSM/FSM_onehot_estado[4]_i_1_n_0 | btn_reset_IBUF   |                2 |             10 |
+|  clk_IBUF_BUFG | FSM/cont_saida_0                 | btn_reset_IBUF   |                2 |             12 |
+|  clk_IBUF_BUFG | IE/U_TX/sh0                      |                  |                2 |             12 |
+|  clk_IBUF_BUFG | IE/U_TX/E[0]                     |                  |                2 |             12 |
+|  clk_IBUF_BUFG | FSM/cont_reg[0][0]               | btn_reset_IBUF   |                3 |             14 |
+|  clk_IBUF_BUFG |                                  |                  |                3 |             16 |
+|  clk_IBUF_BUFG | IE/U_RX/data0                    |                  |                3 |             16 |
+|  clk_IBUF_BUFG | IE/wd_cont[9]_i_1_n_0            | btn_reset_IBUF   |                3 |             20 |
+|  clk_IBUF_BUFG | HC5/cont_trig[9]_i_1_n_0         | btn_reset_IBUF   |                4 |             22 |
+|  clk_IBUF_BUFG | D2/t_1khz                        | btn_reset_IBUF   |                5 |             24 |
+|  clk_IBUF_BUFG | IE/U_RX/cont                     | btn_reset_IBUF   |                6 |             28 |
+|  clk_IBUF_BUFG | IE/U_TX/cont[13]_i_1__1_n_0      | btn_reset_IBUF   |                5 |             28 |
+|  clk_IBUF_BUFG | FSM/E[0]                         | btn_reset_IBUF   |                5 |             32 |
+|  clk_IBUF_BUFG | HC5/cont_per_0                   | btn_reset_IBUF   |                5 |             46 |
+|  clk_IBUF_BUFG | HC5/cont_echo[25]_i_1_n_0        | btn_reset_IBUF   |                8 |             52 |
+|  clk_IBUF_BUFG |                                  | btn_reset_IBUF   |               77 |            390 |
++----------------+----------------------------------+------------------+------------------+----------------+
+
+
